@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>robotic_arm</name>
+  <version>0.0.0</version>
+  <description>Inverse kinematics for a 5R robotic arm</description>
+  <maintainer email="ciarlo.1796690@studenti.uniroma1.it">kitsune</maintainer>
+   <license>no</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>Eigen3</depend>
+  <depend>sensor_msgs</depend>
+  <depend>yaml-cpp</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <launchfile>launch/start_simulation.launch.py</launchfile>
+    <urdf_directory>urdf/robotic_arm.urdf</urdf_directory>
+  </export>
+  
+</package>
