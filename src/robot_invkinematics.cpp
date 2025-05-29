@@ -34,9 +34,9 @@ public:
     loadDH(dh_file);    
     
     // Inizializzo la posa di partenza (tutti zeri)
-	last_solution_ = Eigen::VectorXd::Zero(dh_.size());
+    last_solution_ = Eigen::VectorXd::Zero(dh_.size());
 
-	// Publisher per i JointState su '/joint_states'
+    // Publisher per i JointState su '/joint_states'
     joint_pub_ = create_publisher<sensor_msgs::msg::JointState>("/joint_states", 10);
     
     // pubblico la posa iniziale
